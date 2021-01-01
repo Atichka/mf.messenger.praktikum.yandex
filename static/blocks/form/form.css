@@ -1,0 +1,8 @@
+@import url(./__field-name/form__field-name.css);
+@import url(./__input/form__input.css);
+@import url(./__button/form__button.css);
+@import url(./__signup-button/form__signup-button.css);
+
+.form {
+    margin-top: 40px;
+}
