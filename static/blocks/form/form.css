@@ -2,6 +2,8 @@
 @import url(./__input/form__input.css);
 @import url(./__button/form__button.css);
 @import url(./__signup-button/form__signup-button.css);
+@import url(./__top-login/form__top-login.css);
+@import url(./__top-signin/form__top-signin.css);
 
 .form {
     margin-top: 40px;
