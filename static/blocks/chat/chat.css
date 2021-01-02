@@ -5,6 +5,7 @@
 @import url(./__time/chat__time.css);
 @import url(./__counter-message/chat__counter-message.css);
 @import url(./__info/chat__info.css);
+@import url(./__menu/chat__menu.css);
 
 .chat {
     border-top: 1px solid #EAEAEA; 

@@ -1,5 +1,20 @@
 @import url(./__not-chat/messages__not-chat.css);
+@import url(./__data/messages__data.css);
+@import url(./__name/messages__name.css);
+@import url(./__message/messages__message.css);
+@import url(./__container/messages__container.css);
+@import url(./__pic/messages__pic.css);
+@import url(./__time-text/messages__time-text.css);
+@import url(./__container-pic/messages__container-pic.css);
+@import url(./__time-pic/messages__time-pic.css);
+@import url(./__you/messages__you.css);
+@import url(./__background-grey/messages__background-grey.css);
+@import url(./__color-grey/messages__color-grey.css);
+@import url(./__background-blue/messages__background-blue.css);
+@import url(./__color-blue/messages__color-blue.css);
 
 .messages {
     max-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
