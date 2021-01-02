@@ -13,3 +13,5 @@
 @import url(./blocks/chat/chat.css);
 @import url(./blocks/chats-list/chats-list.css);
 @import url(./blocks/hide/hide.css);
+@import url(./blocks/container-chats/container-chats.css);
+@import url(./blocks/messages/messages.css);

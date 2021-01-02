@@ -1,0 +1,5 @@
+@import url(./__not-chat/messages__not-chat.css);
+
+.messages {
+    max-height: 100vh;
+}
