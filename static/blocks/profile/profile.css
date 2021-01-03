@@ -8,6 +8,7 @@
 @import url(./__table-info-edit/profile__table-info-edit.css);
 @import url(./__button/profile__button.css);
 @import url(./__table-password/profile__table-password.css);
+@import url(./__button-pic/profile__button-pic.css);
 
 .profile {
     display: grid;
