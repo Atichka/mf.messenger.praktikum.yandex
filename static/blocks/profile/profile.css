@@ -7,6 +7,7 @@
 @import url(./__table-row/profile__table-row.css);
 @import url(./__table-info-edit/profile__table-info-edit.css);
 @import url(./__button/profile__button.css);
+@import url(./__table-password/profile__table-password.css);
 
 .profile {
     display: grid;
