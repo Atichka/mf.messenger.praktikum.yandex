@@ -1,0 +1,12 @@
+@import url(./__button-back/profile__button-back.css);
+@import url(./__container/profile__container.css);
+@import url(./__photo/profile__photo.css);
+@import url(./__pic/profile__pic.css);
+@import url(./__name/profile__name.css);
+@import url(./__table-info/profile__table-info.css);
+@import url(./__table-row/profile__table-row.css);
+
+.profile {
+    display: grid;
+    grid-template-columns: 64px auto;
+}

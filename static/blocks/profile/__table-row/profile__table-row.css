@@ -1,0 +1,5 @@
+.profile__table-row {
+    padding: 10px 0;
+    transition: .3s linear;
+    width: 255px;
+}
