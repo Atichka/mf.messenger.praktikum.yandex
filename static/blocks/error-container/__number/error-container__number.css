@@ -1,0 +1,12 @@
+.error-container__number {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 280px;
+
+    text-align: center;
+
+    color: #1E1E1E;
+}
