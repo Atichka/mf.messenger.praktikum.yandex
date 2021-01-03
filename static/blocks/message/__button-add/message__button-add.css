@@ -1,0 +1,7 @@
+.message__button-add {
+    background-image: url(../../../images/addPic.png);
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
