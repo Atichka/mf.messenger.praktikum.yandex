@@ -67,15 +67,15 @@
             <table class="profile__table-password hide">
                 <tr><td class="profile__table-row table__line">Старый пароль</td>
                     <td class="profile__table-row table__line table__text-right">
-                        <input id="userPassword" type="password" name="password" class="table__input table__text-right" required
+                        <input id="oldPassword" type="password" name="oldPassword" class="table__input table__text-right" required
                             placeholder="Пароль"></td></tr>
                 <tr><td class="profile__table-row table__line">Новый пароль</td>
                     <td class="profile__table-row table__line table__text-right">
-                        <input id="userPassword" type="password" name="password" class="table__input table__text-right" required
+                        <input id="newPassword" type="password" name="newPassword" class="table__input table__text-right" required
                             placeholder="Пароль"></td></tr>
                 <tr><td class="profile__table-row">Повторить новый пароль</td>
                     <td class="profile__table-row table__text-right">
-                        <input id="userPassword" type="password" name="password" class="table__input table__text-right" required
+                        <input id="newPassword" type="password" name="newPassword" class="table__input table__text-right" required
                             placeholder="Пароль"><span class="error">Пароли не совпадают</span></td></tr>
             </table>
             <div class="profile__setting">
@@ -93,8 +93,9 @@
     <div class="popup-avatar">
         <div class="popup-avatar__content">
           <p class="popup-avatar__text">Загрузите файл</p>
-          <a class="popup-avatar__link" href="#">Выберите файл на </br>копьютере</a>
+          <a class="popup-avatar__link" name="avatar" href="#">Выберите файл на </br>копьютере</a>
           <button type="submit" class="profile__button">Поменять</button>
+          <span class="error">Нужно выбрать файл</span>
         </div>
       </div>
   </div>
