@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <title>signin</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="signin">
-    <div class="container">
-      <h1 class="title">Регистрация</h1>
-      <form class="formsignin" name="formsignin">
-        <p class="form__field-name">Email</p>
-        <input id="userEmail" type="email" name="email" class="form__input" minlength="2"
+  <head>
+    <title>signin</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="signin">
+      <div class="container">
+        <h1 class="title">Регистрация</h1>
+        <form class="formsignin" name="formsignin">
+          <p class="form__field-name">Email</p>
+          <input
+            id="userEmail"
+            type="email"
+            name="email"
+            class="form__input"
+            minlength="2"
             maxlength="30"
-            required placeholder="Почта">
-        <span id="error-email" class="error">Неправильный формат email</span>
-        <p class="form__field-name">Логин</p>
-        <input id="userLogin" type="login" name="login" class="form__input" minlength="2"
+            required
+            placeholder="Почта"
+          />
+          <span id="error-email" class="error">Неправильный формат email</span>
+          <p class="form__field-name">Логин</p>
+          <input
+            id="userLogin"
+            type="login"
+            name="login"
+            class="form__input"
+            minlength="2"
             maxlength="30"
-            required placeholder="ivanivanov">
-        <p class="form__field-name">Имя</p>
-        <input id="newName" type="text" name="first_name" class="form__input" required
-            placeholder="Имя">
-        <p class="form__field-name">Фамилия</p>
-        <input id="newSecondName" type="text" name="second_name" class="form__input" required
-            placeholder="Фамилия">
-        <p class="form__field-name">Телефон</p>
-        <input class="form__input" type="tel" name="phone" placeholder="+7 (909) 967 30 30" pattern="([\+]\d{1}\s?[\(]?\d{3}[\)]?\s?[\-]?\d{3}[\-]?\d{2}[\-]?\d{2})|(8\d{10})$" minlength="11" maxlength="18" />
-        <span class="error">телефон в формате: +7 (909) 967 30 30</span>
-        <p class="form__field-name">Пароль</p>
-        <input id="userPassword" type="password" name="password" class="form__input" required
-            placeholder="Пароль">
-        <p class="form__field-name">Пароль (ещё раз)</p>
-        <input id="userPasswordRepeat" type="password" name="password" class="form__input" required
-            placeholder="Пароль">
-        <span id="error-password" class="error">Пароли не совпадают</span>
-        <button type="submit" class="form__button form__top-signin">Зарегистрироваться</button>
-        <button class="form__signup-button">Войти</button>
-      </form>
+            required
+            placeholder="ivanivanov"
+          />
+          <p class="form__field-name">Имя</p>
+          <input
+            id="newName"
+            type="text"
+            name="first_name"
+            class="form__input"
+            required
+            placeholder="Имя"
+          />
+          <p class="form__field-name">Фамилия</p>
+          <input
+            id="newSecondName"
+            type="text"
+            name="second_name"
+            class="form__input"
+            required
+            placeholder="Фамилия"
+          />
+          <p class="form__field-name">Телефон</p>
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="+7 (909) 967 30 30"
+            pattern="([\+]\d{1}\s?[\(]?\d{3}[\)]?\s?[\-]?\d{3}[\-]?\d{2}[\-]?\d{2})|(8\d{10})$"
+            minlength="11"
+            maxlength="18"
+          />
+          <span class="error">телефон в формате: +7 (909) 967 30 30</span>
+          <p class="form__field-name">Пароль</p>
+          <input
+            id="userPassword"
+            type="password"
+            name="password"
+            class="form__input"
+            required
+            placeholder="Пароль"
+          />
+          <p class="form__field-name">Пароль (ещё раз)</p>
+          <input
+            id="userPasswordRepeat"
+            type="password"
+            name="password"
+            class="form__input"
+            required
+            placeholder="Пароль"
+          />
+          <span id="error-password" class="error">Пароли не совпадают</span>
+          <button type="submit" class="form__button form__top-signin">
+            Зарегистрироваться
+          </button>
+          <button class="form__signup-button">Войти</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <script src="./signin.js"></script>
-</body>
-</html> 
+    <script type="module" src="./signin.js"></script>
+  </body>
+</html>
