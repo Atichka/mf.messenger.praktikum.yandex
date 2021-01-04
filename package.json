@@ -2,11 +2,11 @@
   "name": "mf.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "Веб-приложение \"Чат\"",
-  "main": "server.js",
-  "dependencies": {
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -19,9 +19,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Atichka/mf.messenger.praktikum.yandex/issues"
-  },
-  "engines": {
-    "node": "v12.16.1"
   },
   "homepage": "https://github.com/Atichka/mf.messenger.praktikum.yandex#readme"
 }
