@@ -1,7 +1,7 @@
-import { getDataForm } from "./script.js";
+import { getDataForms } from "./script.js";
 
 const button = document.querySelector(".form__button");
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  getDataForm(document.forms);
+  getDataForms(document.forms);
 });
