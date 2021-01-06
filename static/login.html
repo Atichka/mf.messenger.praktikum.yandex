@@ -14,7 +14,7 @@
             <label for="userLogin" class="form__field-name">Логин</label>
             <input
               id="userLogin"
-              type="login"
+              type="text"
               name="login"
               class="form__input"
               minlength="2"
@@ -35,7 +35,12 @@
             <button type="submit" class="form__button form__top-login">
               Авторизоваться
             </button>
-            <button class="form__signup-button">Нет аккаунта?</button>
+            <button
+              onclick="window.location.href = './signin.html'"
+              class="form__signup-button"
+            >
+              Нет аккаунта?
+            </button>
           </form>
         </div>
       </div>
