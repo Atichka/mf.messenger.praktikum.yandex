@@ -6,5 +6,6 @@
 @import url(./__top-signin/form__top-signin.css);
 
 .form {
-    margin-top: 40px;
+  margin-top: 40px;
+  text-align: left;
 }
