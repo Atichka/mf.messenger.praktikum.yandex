@@ -1,13 +1,14 @@
 .error {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 8px;
 
-    color: #FF2F2F;
+  color: #ff2f2f;
 
-    display: block;
-    margin-top: 7px;
-    box-sizing: border-box;
+  display: block;
+  margin-top: 7px;
+  box-sizing: border-box;
+  text-align: left;
 }
