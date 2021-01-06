@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>login</title>
+  <title>profile</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -9,85 +9,73 @@
   <div class="page">
     <div class="profile">
         <div class="profile__container">
-            <button class="profile__button-back">&larr;</button>
+            <button onclick="window.location.href = './chats.html'"class="profile__button-back">&larr;</button>
         </div>
-        <div class="profile__about">
+        <div class="main">
             <div class="profile__photo hide">
                 <img src="./images/not-foto.svg" alt="" class="profile__pic">
                 <h1 class="profile__name hide">Иван</h1>
             </div>
-            <button class="profile__button-pic"><img src="./images/not-foto.svg" alt="Картинка"></button>
-            <table class="profile__table-info hide">
-                <tr><td class="profile__table-row table__line">Почта</td>
-                    <td class="profile__table-row table__line table__text-right">pochta@yandex.ru</td></tr>
-                <tr><td class="profile__table-row table__line">Логин</td>
-                    <td class="profile__table-row table__line table__text-right">ivanivanov</td></tr>
-                <tr><td class="profile__table-row table__line">Имя</td>
-                    <td class="profile__table-row table__line table__text-right">Иван</td></tr>
-                <tr><td class="profile__table-row table__line">Фамилия</td>
-                    <td class="profile__table-row table__line table__text-right">Иванов</td></tr>
-                <tr><td class="profile__table-row table__line">Имя в чате</td>
-                    <td class="profile__table-row table__line table__text-right">Иван</td></tr>
-                <tr><td class="profile__table-row">Телефон</td>
-                    <td class="profile__table-row table__text-right">+7 (909) 967 30 30</td></tr>
-            </table>
+            <button class="profile__button-pic"></button>
+            <div class="profile__info">
+                <div class="profile__row line"><p class="profile__text">Почта</p>
+                    <p class="text__grey profile__text">pochta@yandex.ru</p></div>
+                <div class="profile__row line"><p class="profile__text">Логин</p>
+                    <p class="text__grey profile__text">ivanivanov</p></div>
+                <div class="profile__row line"><p class="profile__text">Имя</p>
+                    <p class="text__grey profile__text">Иван</p></div>
+                <div class="profile__row line"><p class="profile__text">Фамилия</p>
+                    <p class="text__grey profile__text">Иванов</p></div>
+                <div class="profile__row line"><p class="profile__text">Имя в чате</p>
+                    <p class="text__grey profile__text">Иван</p></div>
+                <div class="profile__row"><p class="profile__text">Телефон</p>
+                    <p class="text__grey profile__text">+7 (909) 967 30 30</p></div>
+            </div>
             <form id="formData" name="formData">
-                <table class="profile__table-info-edit">
-                    <tr><td class="profile__table-row table__line">Почта</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="userEmail" type="email" name="email" class="table__input table__text-right" minlength="2"
-                                maxlength="30"
-                                required placeholder="pochta@yandex.ru"></td></tr>
-                    <tr><td class="profile__table-row table__line">Логин</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="userLogin" type="login" name="login" class="table__input table__text-right" minlength="2"
-                                maxlength="30"
-                                required placeholder="ivanivanov">
-                        </td></tr>
-                    <tr><td class="profile__table-row table__line">Имя</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="newName" type="text" name="first_name" class="table__input table__text-right" required
-                                placeholder="Иван">
-                        </td></tr>
-                    <tr><td class="profile__table-row table__line">Фамилия</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="newSecondName" type="text" name="second_name" class="table__input table__text-right" required
-                                placeholder="Иванов">
-                        </td></tr>
-                    <tr><td class="profile__table-row table__line">Имя в чате</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="newName" type="text" name="display_name" class="table__input table__text-right" required
-                                placeholder="Иван">
-                        </td></tr>
-                    <tr><td class="profile__table-row">Телефон</td>
-                        <td class="profile__table-row table__text-right">
-                            <input class="table__input table__text-right" type="tel" name="phone" placeholder="+7 (909) 967 30 30" pattern="([\+]\d{1}\s?[\(]?\d{3}[\)]?\s?[\-]?\d{3}[\-]?\d{2}[\-]?\d{2})|(8\d{10})$" minlength="11" maxlength="18" />
-                            <span class="error">телефон в формате: +7 (909) 967 30 30</span>
-                        </td></tr>
-                </table>
+                <div class="profile__info hide">
+                    <div class="profile__row line"><p class="profile__text">Почта</p>
+                        <input id="userEmail" type="email" name="email" class="profile__input text__grey profile__text" minlength="2"
+                            maxlength="30"
+                            required placeholder="pochta@yandex.ru"></div>
+                    <div class="profile__row line"><p class="profile__text">Логин</p>
+                        <input id="userLogin" type="text" name="login" class="profile__input text__grey profile__text" minlength="2"
+                            maxlength="30"
+                            required placeholder="ivanivanov"></div>
+                    <div class="profile__row line"><p class="profile__text">Имя</p>
+                        <input id="newName" type="text" name="first_name" class="profile__input text__grey profile__text" minlength="2"
+                            maxlength="30"
+                            required placeholder="Иван"></div>
+                    <div class="profile__row line"><p class="profile__text">Фамилия</p>
+                        <input id="newSecondName" type="text" name="second_name" class="profile__input text__grey profile__text" minlength="2"
+                            maxlength="30"
+                            required placeholder="Иванов"></div>
+                    <div class="profile__row line"><p class="profile__text">Имя в чате</p>
+                        <input id="newName" type="text" name="display_name" class="profile__input text__grey profile__text" 
+                            required placeholder="Иван"></div>
+                    <div class="profile__row line"><p class="profile__text">Телефон</p>
+                        <input class="profile__input text__grey profile__text" type="tel" name="phone" placeholder="+7 (909) 967 30 30" pattern="([\+]\d{1}\s?[\(]?\d{3}[\)]?\s?[\-]?\d{3}[\-]?\d{2}[\-]?\d{2})|(8\d{10})$" minlength="11" maxlength="18" />
+                    </div>
+                </div>
             </form>
             <form id="formPassword" name="formPassword">
-                <table class="profile__table-password hide">
-                    <tr><td class="profile__table-row table__line">Старый пароль</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="oldPassword" type="password" name="oldPassword" class="table__input table__text-right" required
-                                placeholder="Пароль"></td></tr>
-                    <tr><td class="profile__table-row table__line">Новый пароль</td>
-                        <td class="profile__table-row table__line table__text-right">
-                            <input id="newPassword" type="password" name="newPassword" class="table__input table__text-right" required
-                                placeholder="Пароль"></td></tr>
-                    <tr><td class="profile__table-row">Повторить новый пароль</td>
-                        <td class="profile__table-row table__text-right">
-                            <input id="newPassword" type="password" name="newPassword" class="table__input table__text-right" required
-                                placeholder="Пароль"><span class="error">Пароли не совпадают</span></td></tr>
-                </table>
+                <div class="profile__info hide">
+                    <div class="profile__row line"><p class="profile__text">Старый пароль</p>
+                        <input id="oldPassword" type="password" name="oldPassword" class="profile__input text__grey profile__text" required
+                            placeholder="Пароль"></div>
+                    <div class="profile__row line"><p class="profile__text">Новый пароль</p>
+                        <input id="newPassword" type="password" name="newPassword" class="profile__input text__grey profile__text" required
+                            placeholder="Пароль"></div>
+                    <div class="profile__row line"><p class="profile__text">Повторить новый пароль</p>
+                        <input id="newPassword" type="password" name="newPassword" class="profile__input text__grey profile__text" required
+                            placeholder="Пароль"></div><span class="profile__error">Пароли не совпадают</span>
+                </div>
             </form>
             <div class="profile__setting">
-                <table class="profile__table-info hide">
-                    <tr><td class="profile__table-row table__line"><a href="./profile.html" class="table__edit">Изменить данные</a></td><td class="profile__table-row table__line"></td></tr>
-                    <tr><td class="profile__table-row table__line"><a href="./profile.html" class="table__edit">Изменить пароль</a></td><td class="profile__table-row table__line"></td></tr>
-                    <tr><td class="profile__table-row"><a href="./profile.html" class="table__exit">Выйти</a></td><td class="profile__table-row"></td></tr>
-                </table>
+                <div class="profile__info">
+                    <div class="profile__row line"><a href="./profile.html" class="text__blue profile__text">Изменить данные</a></div>
+                    <div class="profile__row line"><a href="./profile.html" class="text__blue profile__text">Изменить пароль</a></div>
+                    <div class="profile__row"><a href="./profile.html" class="text__red profile__text">Выйти</a></div>
+                </div>
                 <div class="profile__button-container">
                     <button type="submit" class="profile__button button__save">Сохранить</button>
                 </div>
@@ -96,10 +84,12 @@
     </div>
     <div class="popup-avatar">
         <div class="popup-avatar__content">
-          <p class="popup-avatar__text">Загрузите файл</p>
-          <a class="popup-avatar__link" name="avatar" href="#">Выберите файл на </br>копьютере</a>
-          <button type="submit" class="profile__button">Поменять</button>
-          <span class="error">Нужно выбрать файл</span>
+            <p class="popup-avatar__text">Загрузите файл</p>
+            <form id="formAddFile" name="formAddFile" enctype="multipart/form-data" method="post">
+                <input type="file" class="popup-avatar__link" name="avatar" accept="image/*,image/jpeg"></input>
+            </form>
+            <button type="submit" class="profile__button">Поменять</button>
+            <span class="popup-avatar__error">Нужно выбрать файл</span>
         </div>
       </div>
   </div>
