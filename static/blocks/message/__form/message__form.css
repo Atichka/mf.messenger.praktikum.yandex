@@ -1,0 +1,8 @@
+.message__form {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding: 11px;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+.messages__not-chat {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+
+    text-align: center;
+
+    color: #999;
+    margin: 50vh 0;
+}

@@ -1,0 +1,17 @@
+.search-field {
+    border: 0; 
+    background: #EFEFEF;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+
+
+color: #999
+  }
+  
+  .search-field:focus {
+    outline: none;
+  }

@@ -1,0 +1,13 @@
+.error-container__link {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration: none;
+
+    display: block; 
+    text-align: center;
+
+    color: #3369F3;
+}

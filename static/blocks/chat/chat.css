@@ -1,0 +1,18 @@
+@import url(./__photo/chat__photo.css);
+@import url(./__name/chat__name.css);
+@import url(./__message/chat__message.css);
+@import url(./__you/chat__you.css);
+@import url(./__time/chat__time.css);
+@import url(./__counter-message/chat__counter-message.css);
+@import url(./__info/chat__info.css);
+@import url(./__menu/chat__menu.css);
+
+.chat {
+    border-top: 1px solid #EAEAEA; 
+    border-bottom: 1px solid #EAEAEA; 
+    padding: 12px; 
+    display: grid;
+    grid-template-columns: 47px auto 30px;
+    grid-template-rows: 47px;
+    gap: 10px;
+}

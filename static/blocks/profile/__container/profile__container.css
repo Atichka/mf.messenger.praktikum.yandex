@@ -1,0 +1,6 @@
+.profile__container {
+    background: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+    height: 100vh;
+    display: flex;
+}

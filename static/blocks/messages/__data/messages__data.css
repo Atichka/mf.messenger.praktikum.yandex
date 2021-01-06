@@ -1,0 +1,10 @@
+.messages__data {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+
+  padding-top: 48px;
+  color: #999;
+}

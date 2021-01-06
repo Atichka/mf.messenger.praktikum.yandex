@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>login</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="main">
+        <div class="container">
+          <h1 class="title">Вход</h1>
+          <form id="formlogin" class="form" name="formlogin">
+            <label for="userLogin" class="form__field-name">Логин</label>
+            <input
+              id="userLogin"
+              type="text"
+              name="login"
+              class="form__input"
+              minlength="2"
+              maxlength="30"
+              required
+              placeholder="ivanivanov"
+            />
+            <span id="error-login" class="error">Неверный логин</span>
+            <label for="userPassword" class="form__field-name">Пароль</label>
+            <input
+              id="userPassword"
+              type="password"
+              name="password"
+              class="form__input"
+              required
+              placeholder="Пароль"
+            />
+            <button type="submit" class="form__button form__top-login">
+              Авторизоваться
+            </button>
+            <button
+              onclick="window.location.href = './signin.html'"
+              class="form__signup-button"
+            >
+              Нет аккаунта?
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>

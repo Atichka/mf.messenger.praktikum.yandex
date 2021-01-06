@@ -1,0 +1,14 @@
+.form__signup-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+
+    color: #3369F3;
+
+    border: none;
+    background: none;
+    margin-top: 14px;
+    width: 100%;
+}

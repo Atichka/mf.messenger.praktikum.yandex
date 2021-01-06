@@ -1,0 +1,10 @@
+.form__field-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  text-align: left;
+
+  color: #999;
+}

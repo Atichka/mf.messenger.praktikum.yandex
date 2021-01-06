@@ -1,0 +1,7 @@
+.chats {
+    background: #FBFBFB;
+    padding: 21px 10px 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
