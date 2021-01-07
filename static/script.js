@@ -1,12 +1,13 @@
-const form = document.forms;
+const forms = [...document.forms];
 
-export function getDataForms() {
-  for (let i = 0; i < form.length; i++) {
-    let formData = new FormData(form[i]);
+forms.forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let formData = new FormData(form);
     let obj = {};
     for (let [name, value] of formData) {
       obj[name] = value;
     }
     console.log(obj);
-  }
-}
+  });
+});
