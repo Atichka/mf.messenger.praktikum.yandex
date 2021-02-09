@@ -1,9 +1,7 @@
-const root = document.querySelector(".root");
-
+import { root } from "./contant.js";
 function render(root, data) {
-  root.innerHTML = data;
+    root.innerHTML = data;
 }
-
 const template = `
 <div class="page">
       <div class="profile">
@@ -217,5 +215,4 @@ const template = `
     </div>
 `;
 const pageTemplate = Handlebars.compile(template);
-
 render(root, pageTemplate());

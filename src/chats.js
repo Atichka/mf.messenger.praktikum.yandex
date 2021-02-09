@@ -251,4 +251,4 @@ const template = `
 `;
 const pageTemplate = Handlebars.compile(template);
 
-render(root, pageTemplate());
+render(root, pageTemplateChats());
