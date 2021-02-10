@@ -1,6 +1,6 @@
-const root = document.querySelector(".root");
+import { root } from "./contant.js";
 
-function render(root, data) {
+function render(root: any, data: object) {
   root.innerHTML = data;
 }
 
@@ -60,7 +60,6 @@ const template = `
               type="tel"
               name="phone"
               placeholder="+7 (909) 967 30 30"
-              pattern="([\+]\d{1}\s?[\(]?\d{3}[\)]?\s?[\-]?\d{3}[\-]?\d{2}[\-]?\d{2})|(8\d{10})$"
               minlength="11"
               maxlength="18"
             />

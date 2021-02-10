@@ -1,4 +1,3 @@
-"use strict";
 const forms = [...document.forms];
 forms.forEach((form) => {
     form.addEventListener("submit", (e) => {
@@ -11,3 +10,4 @@ forms.forEach((form) => {
         console.log(obj);
     });
 });
+export {};

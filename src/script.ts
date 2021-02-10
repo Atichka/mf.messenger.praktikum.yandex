@@ -1,8 +1,6 @@
-const forms: HTMLFormElement[] = [...document.forms];
+import { FormData } from "./contant.js";
 
-interface FormData {
-  [Symbol.iterator](): IterableIterator<[string, FormDataEntryValue]>;
-}
+const forms: HTMLFormElement[] = [...document.forms];
 
 forms.forEach((form) => {
   form.addEventListener("submit", (e: Event) => {

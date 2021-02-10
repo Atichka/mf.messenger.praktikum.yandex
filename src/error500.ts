@@ -1,6 +1,6 @@
-const root = document.querySelector(".root");
+import { root } from "./contant.js";
 
-function render(root, data) {
+function render(root: any, data: object) {
   root.innerHTML = data;
 }
 
